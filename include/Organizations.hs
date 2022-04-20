@@ -1,7 +1,15 @@
-import Data.List
-import System.IO
+module Organizations (
+    print_border,
+    print_intro,
+    print_exit_msg,
+    free_tibet,
+    uhrp,
+    wikimedia,
+    etge,
+    hrw,
+    notepadpp
+) where
 
--- import Functions
 
 print_border :: Int -> IO()
 print_border 0 = putStrLn ""
@@ -21,13 +29,6 @@ print_intro = do
     
     putStrLn "Type \"begin\" to get started!"
 
-    input <- getLine
-    if input == "begin"
-        then putStrLn "we're proceeding"
-        else putStrLn "we're not proceeding"
-
-
-    print_border 80
     
 
 print_exit_msg :: IO()
@@ -43,11 +44,28 @@ print_exit_msg = do
 free_tibet :: IO()
 free_tibet = do
     print_border 80
-    
+    putStr "Tibet is one of the most oppressed places on Earth; according to Freedom House, Tibet has a 1/100 score in terms of Global Freedom "
+    putStrLn "(https://freedomhouse.org/countries/freedom-world/scores?sort=asc&order=Total%20Score%20and%20Status)."
+    putStrLn "To support Tibetan freedom, I have donated to and bought merchandise from Free Tibet: https://freetibet.org/"
+    putStrLn "Consider checking out Free Tibet's great merchandise store: https://shop.freetibet.org/"
+
+    putStrLn ""
+    putStr "To learn more about Tibet, consider reading Barbara Demick's excellent book, "
+    putStr "\"Eat the Buddha: Life and Death in a Tibetan Town\""
+    putStrLn " (https://www.barnesandnoble.com/w/eat-the-buddha-barbara-demick/1125854779;jsessionid=D56ADBECE9E192001821A020D5CBE037.prodny_store01-atgap06?ean=9780812988116)"
     
 uhrp :: IO()
 uhrp = do
     print_border 80
+    putStrLn ""
+    putStrLn ""
+    putStrLn ""
+    putStrLn ""
+    putStrLn ""
+    putStrLn ""
+    putStrLn ""
+    putStrLn ""
+                                    
 
 
 wikimedia :: IO()
@@ -76,7 +94,4 @@ notepadpp = do
     putStrLn "View the Notepad++ \"Download\" section here: https://notepad-plus-plus.org/downloads/"
     putStrLn "Please consider donating here: https://notepad-plus-plus.org/donate-to-ukraine/"
     
-main = do
-    print_intro
-    print_exit_msg
 
