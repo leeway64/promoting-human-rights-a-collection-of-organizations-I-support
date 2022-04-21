@@ -1,4 +1,4 @@
-# LWOrganizationsISupport
+# LWOrganizations
 
 A list of NGOs, human rights groups, and other organizations I support.
 
@@ -15,9 +15,19 @@ $ ./include/Main
 
 ```
 
+## Documentation
+
+If you prefer, you can also view LWOrganization's content through Sphinx-generated documentation.
+
+```
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+$ pip install -U sphinx
+```
+
 ## Third-party tools
 
-- None. LWOrganizations uses the standard features of the Haskell language.
+- [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documenation generator.
 
 
 ## License
