@@ -41,6 +41,12 @@ main = do
     print_intro
     get_input
         
+    stop_putin
+    get_input
+        
+    nbu
+    get_input
+    
     free_tibet
     get_input
         

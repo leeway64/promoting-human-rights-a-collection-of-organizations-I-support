@@ -1,4 +1,6 @@
 module Organizations (
+    stop_putin,
+    nbu,
     free_tibet,
     uhrp,
     wikimedia,
@@ -7,13 +9,36 @@ module Organizations (
     notepadpp,
     print_border
 ) where
+
+
+stop_putin :: IO()
+stop_putin = do
+    print_border 80
+    putStrLn "Stop Putin"
+    putStrLn "\tStand with Ukraine!"
+    putStrLn "\tSupport the fight against Russia by visiting stopputin.net and donating to a fund."
+    putStrLn "\tDown with Vladimir Putin and Xi Jinping!\n"
+    putStrLn "Type \"next\" to continue."
     
+
+nbu :: IO()
+nbu = do
+    print_border 80
+    putStrLn "National Bank of Ukraine"
+    putStrLn "\tStand with Ukraine!"
+    putStrLn "\tSupport Ukraine by donating directly to the National Bank of Ukraine."
+    putStrLn "\tHere is a fund for directly helping the Ukrainian Armed Forces: "
+    putStrLn "\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi"
+    putStrLn "\tHere is a fund for directly contributing to humanitarian assistance: "
+    putStrLn "\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-rahunok-dlya-gumanitarnoyi-dopomogi-ukrayintsyam-postrajdalim-vid-rosiyskoyi-agresiyi\n"
+    
+    putStrLn "Type \"next\" to continue."
     
 free_tibet :: IO()
 free_tibet = do
     print_border 80
     putStrLn "Free Tibet"
-    putStrLn "\tTibet is one of the most oppressed places on Earth; according to Freedom House, Tibet has a 1/100 score in terms of Global Freedom "
+    putStrLn "\tTibet is one of the most oppressed places on Earth; according to Freedom House, Tibet has a 1/100 score in terms of Global Freedom"
     putStrLn "\t(https://freedomhouse.org/countries/freedom-world/scores?sort=asc&order=Total%20Score%20and%20Status)."
     putStrLn "\tFree Tibet is an NGO that advocates for freedom for Tibet"    
     putStrLn "\tTo support Tibetan freedom, consider donating to Free Tibet: https://freetibet.org/"
@@ -22,7 +47,7 @@ free_tibet = do
     putStrLn ""
     putStrLn "\tTo learn more about Tibet, consider reading Barbara Demick's excellent book, "
     putStrLn "\t\"Eat the Buddha: Life and Death in a Tibetan Town\""
-    putStrLn "\t(https://www.barnesandnoble.com/w/eat-the-buddha-barbara-demick/1125854779)\n"
+    putStrLn "\t\t(https://www.barnesandnoble.com/w/eat-the-buddha-barbara-demick/1125854779)\n"
 
     putStrLn "Type \"next\" to continue."
     
@@ -71,7 +96,7 @@ hrw = do
     print_border 80
     putStrLn "Human Rights Watch"
     putStrLn "\tHuman Rights Watch is a non-profit organization that \"investigates and reports on "
-    putStrLn "\tabuses happening in all corners of the world.\" (https://www.hrw.org/about/about-us)."
+    putStrLn "\tabuses happening in all corners of the world\" (https://www.hrw.org/about/about-us)."
     putStrLn ""
     putStrLn "\tConsider donating to Human Rights watch here: https://www.hrw.org/\n"
 
