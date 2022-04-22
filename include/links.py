@@ -1,5 +1,6 @@
 import functools
 import re
+import collections
 
 
 def print_notepadpp_links():
@@ -19,10 +20,14 @@ def main():
     
     
     print("National Bank of Ukraine")
-    print("\tSupport the Ukrainian Armed Forces: ")
-    print("\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi")
-    print("\tSupport the humanitarian relief effort: ")
-    print("\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-rahunok-dlya-gumanitarnoyi-dopomogi-ukrayintsyam-postrajdalim-vid-rosiyskoyi-agresiyi")
+    dq = collections.deque()
+    dq.append("\tSupport the Ukrainian Armed Forces:")
+    dq.append("\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi")
+    dq.append("\tSupport the humanitarian relief effort:")
+    dq.append("\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-rahunok-dlya-gumanitarnoyi-dopomogi-ukrayintsyam-postrajdalim-vid-rosiyskoyi-agresiyi")
+    
+    for i in range(len(dq)):
+        print(dq.popleft())
     print()
     
     

@@ -4,7 +4,7 @@ A list of NGOs, human rights groups, and other organizations I support.
 
 
 
-Ubuntu Linux is the primary development environment for this project.
+Ubuntu Linux is the primary development environment for this project; all commands were tested in Ubuntu 21.
 
 ## Usage
 
@@ -14,6 +14,26 @@ $ ghc --make include/Main.hs include/Organizations.hs
 $ ./include/Main
 
 
+
+********************************************************************************
+LWOrganizationsISupport is a Haskell program that displays the NGOs and human
+rights organizations I support.
+
+As a big believer in the importance of human rights, I want to share the
+organizations that I have donated to.
+
+Type "next" to get started!
+next
+
+********************************************************************************
+Stop Putin
+	Stand with Ukraine!
+	Support the fight against Russia by visiting stopputin.net and donating to a fund.
+	Down with Vladimir Putin and Xi Jinping!
+
+Type "next" to continue.
+
+    ...
 
 ```
 
@@ -29,6 +49,7 @@ $ python3 -m venv .venv
 $ source .venv/bin/activate
 $ pip install -U sphinx
 $ pip install furo
+$ pip install sphinxcontrib-kroki
 $ cd docs
 $ sphinx-build -b html source build
 ```
@@ -42,18 +63,21 @@ A collected list of all the links can be viewed in the html file, or it can be v
 the Docker container.
 
 ```
-$
+$ docker run
 ```
 
 
 ## Third-party tools
 
-- [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documenation generator.
+- [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documentation generator.
+
+- [Docker](https://www.docker.com/) (Apache-2.0 License): Packages software into independent containers.
 
 
 ## License
 
-The content of this project is licensed under the []().
+The content of this project is licensed under the the [Creative Commons Attribution 4.0 
+International license](https://creativecommons.org/licenses/by/4.0/).
 
 The source code used to format and display the content is licensed under the [MIT License](LICENSE.txt)
 
