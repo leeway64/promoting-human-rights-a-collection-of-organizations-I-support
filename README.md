@@ -63,7 +63,8 @@ A collected list of all the links can be viewed in the html file, or it can be v
 the Docker container.
 
 ```
-$ docker run
+$ docker build -t links ./include
+$ docker run links
 ```
 
 

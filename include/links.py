@@ -4,10 +4,12 @@ import collections
 
 
 def print_notepadpp_links():
-    print("\tNotepad++ downloads:")
-    print("\t\thttps://notepad-plus-plus.org/downloads/")
-    print("\tDonate to Notepad++:")
-    print("\t\thttps://notepad-plus-plus.org/donate-to-ukraine/")
+    ordered = collections.OrderedDict()
+    ordered["\tNotepad++ downloads:\n"] = "\t\thttps://notepad-plus-plus.org/downloads/\n"
+    ordered["\tDonate to Notepad++:\n"] = "\t\thttps://notepad-plus-plus.org/donate-to-ukraine/"
+
+    for key, value in ordered.items():
+        print(f"{key}{value}")
 
 
 def main():
@@ -34,22 +36,21 @@ def main():
     print("Free Tibet")
     print("\tFreedom House Global Freedom Score:")
     print("\t\thttps://freedomhouse.org/countries/freedom-world/scores?sort=asc&order=Total%20Score%20and%20Status")
+    
     ft_list = ['\tFree Tibet site:', '\t\thttps://freetibet.org/', '\tFree Tibet Merchandise store:', '\t\thttps://shop.freetibet.org/',\
         '\t\"Eat the Buddha: Life and\Death in a Tibetan Town\", by Barbara Demick:',\
         '\t\thttps://www.barnesandnoble.com/w/eat-the-buddha-barbara-demick/1125854779']
         
     for line in list(map(lambda x: x + "\n", ft_list)):
         print(line, end="")
-        
     print()
     
     
-    uhrp_list = ['\tAbout UHRP:', '\t\thttps://uhrp.org/about/', '\tUHRP site:', '\t\thttps://uhrp.org/']
     print("Uyghur Human Rights Project")
+    uhrp_list = ['\tAbout UHRP:', '\t\thttps://uhrp.org/about/', '\tUHRP site:', '\t\thttps://uhrp.org/']
     # If the list element is a string, print it
     for element in filter(lambda s: type(s) == str, uhrp_list):
         print(element)
-        
     print()
     
     
@@ -78,7 +79,6 @@ def main():
     p_npp_l = print_notepadpp_links  # Assign variable to function
     p_npp_l()  # Call the function
     print()
-
 
 
 if __name__ == "__main__":
