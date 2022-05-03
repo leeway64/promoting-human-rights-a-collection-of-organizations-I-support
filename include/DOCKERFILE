@@ -10,5 +10,5 @@ COPY . ./
 
 # There can only be 1 CMD command per DOCKERFILE.
 # CMD tells the container how to run the program.
-CMD ["python3", "links.py"]
+CMD ["python3", "references.py"]
 

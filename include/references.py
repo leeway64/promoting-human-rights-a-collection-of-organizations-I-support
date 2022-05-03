@@ -13,7 +13,7 @@ def print_notepadpp_links():
 
 
 def main():
-    print('Collected here are the links mentioned in the Haskell program\n')
+    print('Collected here are the references/links mentioned in the Haskell program\n')
     
     
     print("Stop Putin")
@@ -24,7 +24,7 @@ def main():
     print("National Bank of Ukraine")
     dq = collections.deque()
     dq.append("\tSupport the Ukrainian Armed Forces:")
-    dq.append("\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi")
+    dq.append("\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi\n")
     dq.append("\tSupport the humanitarian relief effort:")
     dq.append("\t\thttps://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-rahunok-dlya-gumanitarnoyi-dopomogi-ukrayintsyam-postrajdalim-vid-rosiyskoyi-agresiyi")
     
@@ -35,9 +35,9 @@ def main():
     
     print("Free Tibet")
     print("\tFreedom House Global Freedom Score:")
-    print("\t\thttps://freedomhouse.org/countries/freedom-world/scores?sort=asc&order=Total%20Score%20and%20Status")
+    print("\t\thttps://freedomhouse.org/countries/freedom-world/scores?sort=asc&order=Total%20Score%20and%20Status\n")
     
-    ft_list = ['\tFree Tibet site:', '\t\thttps://freetibet.org/', '\tFree Tibet Merchandise store:', '\t\thttps://shop.freetibet.org/',\
+    ft_list = ['\tFree Tibet site:', '\t\thttps://freetibet.org/\n', '\tFree Tibet Merchandise store:', '\t\thttps://shop.freetibet.org/\n',\
         '\t\"Eat the Buddha: Life and\Death in a Tibetan Town\", by Barbara Demick:',\
         '\t\thttps://www.barnesandnoble.com/w/eat-the-buddha-barbara-demick/1125854779']
         
@@ -47,7 +47,7 @@ def main():
     
     
     print("Uyghur Human Rights Project")
-    uhrp_list = ['\tAbout UHRP:', '\t\thttps://uhrp.org/about/', '\tUHRP site:', '\t\thttps://uhrp.org/']
+    uhrp_list = ['\tAbout UHRP:', '\t\thttps://uhrp.org/about/\n', '\tUHRP site:', '\t\thttps://uhrp.org/']
     # If the list element is a string, print it
     for element in filter(lambda s: type(s) == str, uhrp_list):
         print(element)
@@ -67,7 +67,7 @@ def main():
     
     
     print("Human Rights Watch")
-    hrw_list = ['\tAbout HRW:', '\t\thttps://www.hrw.org/about/about-us', '\tHRW site:', '\t\thttps://www.hrw.org/']
+    hrw_list = ['\tAbout HRW:', '\t\thttps://www.hrw.org/about/about-us\n', '\tHRW site:', '\t\thttps://www.hrw.org/']
     regular_expression = re.compile(".")  # "." indicates any character except \n
     for element in hrw_list:
         if bool(re.match(regular_expression, element)):
