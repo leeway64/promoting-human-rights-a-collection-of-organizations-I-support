@@ -1,7 +1,7 @@
 National Bank of Ukraine
 ===========================
 
-Stand with Ukraine!
+**Stand with Ukraine!**
 
 Support Ukraine by donating directly to the National Bank of Ukraine.
 

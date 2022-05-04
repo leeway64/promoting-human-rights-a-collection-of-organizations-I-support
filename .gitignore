@@ -8,4 +8,5 @@ Main
 
 # Sphinx files
 build/
+!build/index.html
 

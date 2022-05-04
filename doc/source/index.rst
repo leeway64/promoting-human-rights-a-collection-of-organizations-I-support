@@ -10,13 +10,13 @@ LWHumanRightsOrganizations
    :caption: Contents:
 
    README
-   test1
-   test2
+   stop_putin
+   nbu
+   free_tibet
+   uhrp
+   wikimedia
+   etge
+   hrw
+   notepadpp
+   references.rst
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

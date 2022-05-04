@@ -1,9 +1,10 @@
 Stop Putin
 ===========
 
-Stand with Ukraine!
+**Stand with Ukraine!**
 
-Support the fight against Russia by visiting stopputin.net and donating to a fund.
+Support the fight against Russia by visiting `stopputin.net <stopputin.net>`_ and donating to a
+fund.
 
-Down with Vladimir Putin and Xi Jinping!
+**Down with Vladimir Putin and Xi Jinping!**
 
