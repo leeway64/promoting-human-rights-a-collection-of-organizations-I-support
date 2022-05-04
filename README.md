@@ -47,11 +47,8 @@ To build the html file, run the following commands:
 ```
 $ python3 -m venv .venv
 $ source .venv/bin/activate
-$ pip install -U sphinx
-$ pip install furo
-$ pip install sphinxcontrib-kroki
-$ cd docs
-$ sphinx-build -b html source build
+$ pip install -r requirements.txt
+$ sphinx-build -b html doc/source doc/build
 ```
 
 Then, in under ``docs/build``, open the ``index.html`` file.

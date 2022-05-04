@@ -1,7 +1,11 @@
+# Haskell files
 *.hi
 *.o
 Main
 
 # Python files
 .venv/
+
+# Sphinx files
+build/
 

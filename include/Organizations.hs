@@ -40,7 +40,7 @@ free_tibet = do
     putStrLn "Free Tibet"
     putStrLn "\tTibet is one of the most oppressed places on Earth; according to Freedom House, Tibet has a 1/100 score in terms of Global Freedom"
     putStrLn "\t(https://freedomhouse.org/countries/freedom-world/scores?sort=asc&order=Total%20Score%20and%20Status)."
-    putStrLn "\tFree Tibet is an NGO that advocates for freedom for Tibet"    
+    putStrLn "\tFree Tibet is an NGO that advocates for freedom for Tibet."    
     putStrLn "\tTo support Tibetan freedom, consider donating to Free Tibet: https://freetibet.org/"
     putStrLn "\tConsider checking out Free Tibet's great merchandise store: https://shop.freetibet.org/"
 
