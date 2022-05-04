@@ -71,7 +71,6 @@ $ docker run links
 ## Third-party tools
 
 - [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documentation generator.
-
 - [Docker](https://www.docker.com/) (Apache-2.0 License): Packages software into independent containers.
 
 
