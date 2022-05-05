@@ -4,7 +4,7 @@ A list of NGOs, human rights groups, and other organizations I support.
 
 
 
-Ubuntu Linux is the primary development environment for this project; all commands were tested in Ubuntu 21.
+Ubuntu Linux is the primary development environment for this project; all commands were tested in Ubuntu 21.10.
 
 ## Usage
 
@@ -60,8 +60,8 @@ A collected list of all the links can be viewed in the html file, or it can be v
 the Docker container.
 
 ```
-$ docker build -t links ./include
-$ docker run links
+$ sudo docker build -t references ./include
+$ sudo docker run references
 ```
 
 

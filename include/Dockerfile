@@ -1,6 +1,6 @@
-FROM Ubuntu:22.04
+FROM ubuntu:22.04
 
-RUN apt update && apt install -y python
+RUN apt update && apt install -y python3
 
 # This is where all the commands will be run
 WORKDIR /usr/src/app
