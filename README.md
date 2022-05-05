@@ -2,14 +2,13 @@
 
 A list of NGOs, human rights groups, and other organizations I support.
 
-
-
 Ubuntu Linux is the primary development environment for this project; all commands were tested in Ubuntu 21.10.
+
 
 ## Usage
 
 ```
-$ git clone https://github.com/leeway64/LWOrganizationsISupport.git
+$ git clone https://github.com/leeway64/LWHumanRightsOrganizations.git
 $ ghc --make include/Main.hs include/Organizations.hs
 $ ./include/Main
 
@@ -57,12 +56,14 @@ Then, under `doc/build`, open the `index.html` file.
 ## Links
 
 A collected list of all the links can be viewed in the html file, or it can be viewed by running
-the Docker container.
+the `references` Docker container.
 
 ```
 $ sudo docker build -t references ./include
 $ sudo docker run references
 ```
+
+For more information on how Docker works, refer to [this page](doc/docker/README.md).
 
 
 ## Third-party tools
