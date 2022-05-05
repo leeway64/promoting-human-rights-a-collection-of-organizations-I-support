@@ -1,4 +1,4 @@
-# LWOrganizations
+# LWHumanRightsOrganizations
 
 A list of NGOs, human rights groups, and other organizations I support.
 

@@ -9,7 +9,7 @@ LWHumanRightsOrganizations
 
     {
       "$schema": "https://vega.github.io/schema/vega/v5.json",
-      "description": "A word cloud visualization depicting Vega research paper abstracts.",
+      "description": "A word cloud of different human rights groups and organizations.",
       "width": 800,
       "height": 400,
       "padding": 0,
@@ -106,5 +106,5 @@ LWHumanRightsOrganizations
    etge
    hrw
    notepadpp
-   references.rst
+   references
 
