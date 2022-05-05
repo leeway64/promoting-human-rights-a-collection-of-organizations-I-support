@@ -51,7 +51,7 @@ $ pip install -r requirements.txt
 $ sphinx-build -b html doc/source doc/build
 ```
 
-Then, in under ``docs/build``, open the ``index.html`` file.
+Then, under `doc/build`, open the `index.html` file.
 
 
 ## Links
@@ -68,6 +68,11 @@ $ docker run links
 ## Third-party tools
 
 - [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documentation generator.
+  - [sphinxcontrib-kroki](https://pypi.org/project/sphinxcontrib-kroki/) (MIT License): Allows for
+    diagrams to be embedded into Sphinx documentation using Kroki.
+  - [furo](https://pypi.org/project/furo/) (MIT License): Sphinx documentation theme.
+- [Kroki](https://kroki.io/) (MIT License): Provides a simple way of drawing a variety of
+  different types of diagrams (e.g.: PlantUML, BlockDiag).
 - [Docker](https://www.docker.com/) (Apache-2.0 License): Packages software into independent containers.
 
 
