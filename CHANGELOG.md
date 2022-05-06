@@ -7,7 +7,9 @@ this project follows [semantic versioning](https://semver.org/).
 
 ## Unreleased
 
-- 
+- None
 
-## [1.0.0] - --
+## [1.0.0] - 2022-5-6
+
+- Make first release
 

@@ -94,7 +94,8 @@ For more information on how Docker works, refer to [this page](doc/docker/README
 
 - [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documentation generator.
   - [sphinxcontrib-kroki](https://pypi.org/project/sphinxcontrib-kroki/) (MIT License): Allows for
-    diagrams to be embedded into Sphinx documentation using Kroki.
+    diagrams to be embedded into Sphinx documentation using Kroki. sphinxcontrib-kroki created the
+    Vega word cloud at the start of this document.
   - [furo](https://pypi.org/project/furo/) (MIT License): Sphinx documentation theme.
 - [Kroki](https://kroki.io/) (MIT License): Provides a simple way of drawing a variety of
   different types of diagrams (e.g.: PlantUML, BlockDiag).
