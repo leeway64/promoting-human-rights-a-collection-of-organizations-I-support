@@ -1,6 +1,11 @@
 # LWHumanRightsOrganizations
 
-A list of NGOs, human rights groups, and other organizations I support.
+
+![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
+
+
+LWHumanRightsOrganizations displays a list of NGOs, human rights groups, and other organizations I
+support.
 
 Ubuntu Linux is the primary development environment for this project; all commands were tested in Ubuntu 21.10.
 
@@ -9,8 +14,9 @@ Ubuntu Linux is the primary development environment for this project; all comman
 
 ```
 $ git clone https://github.com/leeway64/LWHumanRightsOrganizations.git
-$ ghc --make include/Main.hs include/Organizations.hs
-$ ./include/Main
+$ cd LWHumanRightsOrganizations
+$ ghc --make include/Main.hs include/Organizations.hs -o bin/Main
+$ ./bin/Main
 
 
 
@@ -61,6 +67,24 @@ the `references` Docker container.
 ```
 $ sudo docker build -t references ./include
 $ sudo docker run references
+
+
+
+Collected here are the references/links mentioned in the Haskell program
+
+Stop Putin
+	Down with Vladmir Putin and Xi Jinping!
+		stopputin.net
+
+National Bank of Ukraine
+	Support the Ukrainian Armed Forces:
+		https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi
+
+	Support the humanitarian relief effort:
+		https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-rahunok-dlya-gumanitarnoyi-dopomogi-ukrayintsyam-postrajdalim-vid-rosiyskoyi-agresiyi
+
+    ...
+
 ```
 
 For more information on how Docker works, refer to [this page](doc/docker/README.md).
