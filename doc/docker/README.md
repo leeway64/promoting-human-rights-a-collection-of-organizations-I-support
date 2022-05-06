@@ -13,7 +13,7 @@ containers, compared to virtual machines.
 
 Images are kind of like templates for containers. Containers are instances of that image.
 
-[(Source)](https://www.youtube.com/watch?v=fqMOX6JJhGo).
+[Source](https://www.youtube.com/watch?v=fqMOX6JJhGo)
 
 In other words, Docker containers are kind of like
 [baby computers](https://www.youtube.com/watch?v=DgT1b50R6JY).

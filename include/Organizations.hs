@@ -16,7 +16,7 @@ stop_putin = do
     print_border 80
     putStrLn "Stop Putin"
     putStrLn "\tStand with Ukraine!"
-    putStrLn "\tSupport the fight against Russia by visiting stopputin.net and donating to a fund."
+    putStrLn "\tSupport the fight against Russia by visiting https://www.stopputin.net/ and donating to a fund."
     putStrLn "\tDown with Vladimir Putin and Xi Jinping!\n"
     putStrLn "Type \"next\" to continue."
     

@@ -17,7 +17,7 @@ def main():
     
     
     print("Stop Putin")
-    print("\t".join(["\tDown with Vladmir Putin and Xi Jinping!\n", "\tstopputin.net"]))
+    print("\t".join(["\tDown with Vladmir Putin and Xi Jinping!\n", "\thttps://www.stopputin.net/"]))
     print()
     
     

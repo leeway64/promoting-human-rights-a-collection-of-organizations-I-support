@@ -8,7 +8,7 @@ Stop Putin
 ------------
 
 Down with Vladmir Putin and Xi Jinping!
-	stopputin.net
+    https://www.stopputin.net/
 
 National Bank of Ukraine
 --------------------------
