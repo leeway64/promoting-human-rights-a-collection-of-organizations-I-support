@@ -1,23 +1,20 @@
-# LWHumanRightsOrganizations
+# Promoting Human Rights: A Collection of Organizations I support
 
 
 ![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/leeway64/promoting-human-rights-a-collection-of-organizations-I-support)
 
-
-LWHumanRightsOrganizations displays a list of NGOs, human rights groups, and other organizations I
-support.
-
-Ubuntu Linux is the primary development environment for this project; all commands were tested in Ubuntu 21.10.
+This project displays a list of NGOs, human rights groups, and other organizations I support.
 
 
 ## Usage
 
 ```
-$ git clone https://github.com/leeway64/LWHumanRightsOrganizations.git
-$ cd LWHumanRightsOrganizations
+$ git clone https://github.com/leeway64/promoting-human-rights-a-collection-of-organizations-I-support.git
+$ cd promoting-human-rights-a-collection-of-organizations-I-support.git
 $ ghc --make include/Main.hs include/Organizations.hs -o bin/Main
 $ ./bin/Main
-
 
 
 ********************************************************************************
@@ -43,26 +40,10 @@ Type "next" to continue.
 ```
 
 
-## Documentation
-
-If you prefer, you can also view LWOrganization's content through Sphinx-generated documentation.
-
-To build the html file, run the following commands:
-
-```
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-$ pip install -r requirements.txt
-$ sphinx-build -b html doc/source doc/build
-```
-
-Then, under `doc/build`, open the `index.html` file.
-
-
 ## Links
 
-A collected list of all the links can be viewed in the html file, or it can be viewed by running
-the `references` Docker container.
+A list of all the sources mentioned in the Haskell program can be viewed by running the
+`references` Docker container.
 
 ```
 $ sudo docker build -t references ./include
@@ -90,6 +71,22 @@ National Bank of Ukraine
 For more information on how Docker works, refer to [this page](doc/docker/README.md).
 
 
+
+## Documentation
+
+You can also view all of this project's content through Sphinx-generated documentation.
+
+To build the `html` file, run the following commands:
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+sphinx-build -b html doc/source doc/build
+open doc/build/inde.html
+```
+
+
 ## Third-party tools
 
 - [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documentation generator.
@@ -104,8 +101,14 @@ For more information on how Docker works, refer to [this page](doc/docker/README
 
 ## License
 
-The content of this project is licensed under the the [Creative Commons Attribution 4.0 
-International license](https://creativecommons.org/licenses/by/4.0/).
+The content of this project is licensed under the [Creative Commons Attribution 4.0 
+International license (CC-BY-4.0)](LICENSE.txt).
 
-The source code used to format and display the content is licensed under the [MIT License](LICENSE.txt)
+To learn more about the CC-BY-4.0 license, refer to
+[this Creative Commons page](https://creativecommons.org/licenses/by/4.0/).
+To use the CC-BY-4.0 license in your own project, refer to this page on
+[choosealicense.com](https://choosealicense.com/licenses/cc-by-4.0).
+
+The source code used to format and display the content (e.g., the Haskell, Python, and Docker code)
+is licensed under the [MIT License](LICENSE-CODE.txt).
 

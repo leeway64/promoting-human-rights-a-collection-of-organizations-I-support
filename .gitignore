@@ -1,7 +1,10 @@
 # Haskell files
 *.hi
 *.o
-Main
+
+# Haskell binaries
+bin/
+!bin/.gitkeep
 
 # Python files
 .venv/
@@ -9,3 +12,5 @@ Main
 # Sphinx files
 build/
 
+# Jetbrains IDE files
+.idea/
