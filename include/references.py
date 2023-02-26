@@ -13,7 +13,7 @@ def print_notepadpp_links():
 
 
 def main():
-    print('Collected here are the references/links mentioned in the Haskell program\n')
+    print('Collected here are the references/links mentioned in this project\n')
     
     
     print("Stop Putin")

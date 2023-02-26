@@ -8,8 +8,9 @@ import Organizations
 print_intro :: IO()
 print_intro = do
     print_border 80
-    putStrLn "LWOrganizationsISupport is a Haskell program that displays the NGOs and human"
-    putStrLn "rights organizations I support.\n"
+    putStrLn "Promoting Human Rights: A Collection of Organizations I Support\n"
+    
+    putStrLn "This project displays a list of NGOs, human rights groups, and other organizations I support.\n"
     
     putStrLn "As a big believer in the importance of human rights, I want to share the"
     putStrLn "organizations that I have donated to.\n"

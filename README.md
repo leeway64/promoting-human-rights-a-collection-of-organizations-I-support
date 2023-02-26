@@ -1,11 +1,15 @@
-# Promoting Human Rights: A Collection of Organizations I support
+# Promoting Human Rights: A Collection of Organizations I Support
 
 
 ![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/leeway64/promoting-human-rights-a-collection-of-organizations-I-support)
 
+
 This project displays a list of NGOs, human rights groups, and other organizations I support.
+
+As a big believer in the importance of human rights, I want to share the
+organizations that I have donated to.
 
 
 ## Usage
@@ -18,8 +22,9 @@ $ ./bin/Main
 
 
 ********************************************************************************
-LWOrganizationsISupport is a Haskell program that displays the NGOs and human
-rights organizations I support.
+Promoting Human Rights: A Collection of Organizations I Support
+
+This project displays a list of NGOs, human rights groups, and other organizations I support.
 
 As a big believer in the importance of human rights, I want to share the
 organizations that I have donated to.
@@ -30,7 +35,7 @@ next
 ********************************************************************************
 Stop Putin
 	Stand with Ukraine!
-	Support the fight against Russia by visiting stopputin.net and donating to a fund.
+	Support the fight against Russia by visiting https://www.stopputin.net/ and donating to a fund.
 	Down with Vladimir Putin and Xi Jinping!
 
 Type "next" to continue.
@@ -42,16 +47,15 @@ Type "next" to continue.
 
 ## Links
 
-A list of all the sources mentioned in the Haskell program can be viewed by running the
-`references` Docker container.
+A list of all the sources mentioned in this project can be viewed by running the `references`
+Docker container.
 
 ```
 $ sudo docker build -t references ./include
 $ sudo docker run references
 
 
-
-Collected here are the references/links mentioned in the Haskell program
+Collected here are the references/links mentioned in this project
 
 Stop Putin
 	Down with Vladmir Putin and Xi Jinping!
@@ -83,8 +87,10 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 sphinx-build -b html doc/source doc/build
-open doc/build/inde.html
+open doc/build/index.html
 ```
+
+`sphinx-build` will also build the project word cloud into the `doc/build/_images` folder.
 
 
 ## Third-party tools
