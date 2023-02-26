@@ -80,7 +80,7 @@ For more information on how Docker works, refer to [this page](doc/docker/README
 
 You can also view all of this project's content through Sphinx-generated documentation.
 
-To build the `html` file, run the following commands:
+To build and open the `html` file, run the following commands:
 
 ```
 python3 -m venv .venv
