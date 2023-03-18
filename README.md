@@ -16,7 +16,7 @@ organizations that I have donated to.
 
 ```
 $ git clone https://github.com/leeway64/promoting-human-rights-a-collection-of-organizations-I-support.git
-$ cd promoting-human-rights-a-collection-of-organizations-I-support.git
+$ cd promoting-human-rights-a-collection-of-organizations-I-support
 $ ghc --make include/Main.hs include/Organizations.hs -o bin/Main
 $ ./bin/Main
 
