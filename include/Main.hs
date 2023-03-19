@@ -57,7 +57,20 @@ print_intro = do
         else return ()
     else pure ()
     
-    putStrLn "Type \"next\" to get started!"
+    
+    let evens = [0,2..8]
+    let infiniteOdds = [5,25..]  -- Create an infinite list
+    -- Generate an infinite list containing only 10s, but grab only the first 10 elements
+    -- I could also use replicate or cycle to create infinite lists
+    let tens = take 10 (repeat 10)
+    -- Multipy every value in the list by 2
+    let list1Times2 = [x * 2 | x <- list1]
+    if evens == [0, 2, 4, 6, 8] && infiniteOdds !! 2 == 45 then
+        if tens == [10, 10, 10, 10, 10, 10, 10, 10, 10, 10] && list1Times2 == [4, 8, 16, 32, 64, 128]then
+            putStrLn "Type \"next\" to get started!"
+        else pure ()
+    else return ()
+
 
     
 print_exit_msg :: IO()
@@ -81,7 +94,13 @@ get_input = do
 
 main :: IO ExitCode
 main = do
-    print_intro
+    -- Get every number between 1 and 100 that is divisible by 4 and 8
+    let divisibleBy4and8 = [x | x <- [1..100], x `mod` 4 == 0, x `mod` 8 == 0]
+    -- Get the sum of each corresponding element in the 2 lists
+    let zippedSum = zipWith (+) [56, 87, 5] [15, 3, 4]
+    if divisibleBy4and8 == [8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96] && zippedSum == [71, 90, 9]then
+        print_intro
+    else pure ()
     get_input
         
     stop_putin
