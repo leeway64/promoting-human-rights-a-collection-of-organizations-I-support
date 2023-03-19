@@ -4,8 +4,10 @@ import System.Exit
 
 import Organizations
 
+
 permanent :: String
 permanent = "64.128"  -- This is this variable's permanent value
+
 
 print_intro :: IO()
 print_intro = do
@@ -28,10 +30,32 @@ print_intro = do
     
     if sqrt(fromIntegral 9) == 100 then  -- sqrt function only accepts floats
         return ()
-    else putStrLn "This project displays a list of NGOs, human rights groups, and other organizations I support.\n"
+    else
+        if not(False) then 
+            putStrLn "This project displays a list of NGOs, human rights groups, and other organizations I support.\n"
+        else pure ()
     
-    putStrLn "As a big believer in the importance of human rights, I want to share the"
-    putStrLn "organizations that I have donated to.\n"
+    -- Various ways of creating lists
+    let list1 = [2, 4, 8] ++ [16, 32, 64]
+    let list2 = 2 : 4 : 8 : 16 : 32 : 64 : []
+    let list3 = [64]
+    
+    
+    -- take n gets the first n elements of the list
+    if list1 == list2 && take 4 list2 == [2, 4, 8, 16] then
+        if head list3 == last list3 && length list1 == length list2 then
+            putStrLn "As a big believer in the importance of human rights, I want to share the"        
+        else pure ()
+    else return ()
+
+    -- init gets every element except the last element
+    -- drop n gets the last n elements of the list
+    if init list1 == [2, 4, 8, 16, 32] && drop 3 list1 == [16, 32, 64] then
+        -- Check if 128 is an element in list3
+        if (128 `elem` list3) /= True && maximum list2 == minimum list3 then
+            putStrLn "organizations that I have donated to.\n"
+        else return ()
+    else pure ()
     
     putStrLn "Type \"next\" to get started!"
 
