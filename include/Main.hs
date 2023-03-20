@@ -1,3 +1,5 @@
+-- A lot of Haskell language features examples are influenced by this video: https://www.youtube.com/watch?v=02_H3LjqMr8 
+
 import Data.List
 import System.IO
 import System.Exit
@@ -7,6 +9,14 @@ import Organizations
 
 permanent :: String
 permanent = "64.128"  -- This is this variable's permanent value
+
+-- Declaring a function
+concatenateStrings :: (String) -> (String) -> (String) -- Type declaration
+concatenateStrings x y = x ++ y
+
+factorial :: Int -> Int
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
 
 
 print_intro :: IO()
@@ -101,12 +111,31 @@ main = do
     if divisibleBy4and8 == [8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96] && zippedSum == [71, 90, 9]then
         print_intro
     else pure ()
+    
     get_input
-        
-    stop_putin
+    
+    
+    let filterLess8 = filter (<8) [1,2..20]
+    let whileLess8 = takeWhile (<8) [1,2..20]
+    
+    -- Create a multiplication table for every number between 1 and 10 using list comprehension
+    let timesTable = [[x * y | x <- [1..10]]| y <- [1..10]]
+    let names = ["Paul Atreides", "Beast Rabban", "Jessica"]
+    let allegiances = ["Fremen", "Harkonnen", "Bene Gesserit"]
+    let namesAllegiances = zip names allegiances  -- Create a tuple out of 2 lists
+    if (filterLess8 == whileLess8) && timesTable !! 1 == [2, 4, 6, 8, 10, 12, 14, 16, 18, 20] then
+        if namesAllegiances !! 0 == ("Paul Atreides", "Fremen") && concatenateStrings "Duncan" " Idaho" == "Duncan Idaho" then
+            stop_putin
+        else pure ()
+    else return ()
+    
     get_input
-        
-    nbu
+    
+    
+    if factorial 4 == 24 then
+        nbu
+    else pure ()
+    
     get_input
     
     free_tibet
