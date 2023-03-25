@@ -7,6 +7,18 @@ import System.Exit
 import Organizations
 
 
+getFirstItem :: [String] -> String
+getFirstItem all@(x:xs) = show x  -- show turns anything into a string
+
+aSongofIceandFire :: Int -> String
+aSongofIceandFire year
+    | year == 1996 = "A Game of Thrones"  -- "|" are guards; they're kind of like switch statements
+    | year == 1998 = "A Clash of Kings"
+    | year == 2000 = "A Storm of Swords"
+    | year == 2005 = "A Feast for Crows"
+    | year == 2011 = "A Dance with Dragons"
+    | otherwise = "Not an A Song of Ice and Fire publication year"
+
 permanent :: String
 permanent = "64.128"  -- This is this variable's permanent value
 
@@ -17,6 +29,17 @@ concatenateStrings x y = x ++ y
 factorial :: Int -> Int
 factorial 0 = 1
 factorial n = n * factorial (n - 1)
+
+square :: Int -> Int
+square x = x * x
+
+areStringsEqual :: [Char] -> [Char] -> Bool
+areStringsEqual [] [] = True
+areStringsEqual (x:xs) (y:ys) = x == y && areStringsEqual xs ys  -- Recursively call areStringsEqual again
+areStringsEqual _ _ = False
+
+getConcatenateFxn :: String -> (String -> String)  -- Return a function
+getConcatenateFxn x y = x ++ y
 
 
 print_intro :: IO()
@@ -132,15 +155,25 @@ main = do
     get_input
     
     
-    if factorial 4 == 24 then
-        nbu
+    let list1 = [4, 8, 16]
+    if factorial 4 == 24 && aSongofIceandFire 2000 == "A Storm of Swords" then
+        -- map applies a function to every element of the list
+        if getFirstItem ["Dune", "Dune Messiah"] == "\"Dune\"" && map square list1 == [16, 64, 256] then
+            nbu
+        else return ()
     else pure ()
     
     get_input
     
-    free_tibet
+    
+    let concat = getConcatenateFxn "A Knight of the "
+    if areStringsEqual "Duncan" "Aegon" /= True && concat "Seven Kingdoms" == "A Knight of the Seven Kingdoms" then
+        free_tibet
+    else return ()
+    
     get_input
-        
+    
+    
     uhrp
     get_input
         
