@@ -19,6 +19,13 @@ aSongofIceandFire year
     | year == 2011 = "A Dance with Dragons"
     | otherwise = "Not an A Song of Ice and Fire publication year"
 
+-- I can also do something similar with a case statement
+southernReachTrilogy :: Int -> String
+southernReachTrilogy year = case year of 
+    2014 -> "Annihilation, Authority, Acceptance"
+    _ -> "Not a Southern Reach Trilogy publication year"
+    
+
 permanent :: String
 permanent = "64.128"  -- This is this variable's permanent value
 
@@ -168,7 +175,10 @@ main = do
     
     let concat = getConcatenateFxn "A Knight of the "
     if areStringsEqual "Duncan" "Aegon" /= True && concat "Seven Kingdoms" == "A Knight of the Seven Kingdoms" then
-        free_tibet
+        -- Use a lambda
+        if map (\x -> "Dune" ++ x) ["", " Messiah"] == ["Dune", "Dune Messiah"] && southernReachTrilogy 2014 == "Annihilation, Authority, Acceptance" then
+            free_tibet
+        else pure ()
     else return ()
     
     get_input
