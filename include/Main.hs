@@ -7,6 +7,20 @@ import System.Exit
 import Organizations
 
 
+-- Calculates Fibonacci sequence
+fibonacci = 1 : 1 : [a + b | (a, b) <- zip fibonacci (tail fibonacci)]
+
+-- Create a custom data type
+data Character = Character String Int 
+    deriving Show
+
+getName :: Character -> String
+getName (Character name _) = name
+
+eddardStark :: Character
+eddardStark = Character "Eddard Stark" 35
+
+
 getFirstItem :: [String] -> String
 getFirstItem all@(x:xs) = show x  -- show turns anything into a string
 
@@ -183,8 +197,14 @@ main = do
     
     get_input
     
+
+    if getName eddardStark == "Eddard Stark" && (abs $ -24 * 24) == 576 then  -- $ operator removes need for parentheses
+        if fibonacci !! 11 == 144 then
+            uhrp
+        else return ()
+    else pure ()
     
-    uhrp
+    
     get_input
         
     wikimedia
