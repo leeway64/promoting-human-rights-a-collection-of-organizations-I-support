@@ -7,8 +7,20 @@ import System.Exit
 import Organizations
 
 
--- Calculates Fibonacci sequence
-fibonacci = 1 : 1 : [a + b | (a, b) <- zip fibonacci (tail fibonacci)]
+{-
+Calculates Fibonacci sequence (from https://www.youtube.com/watch?v=02_H3LjqMr8)
+
+Explanation:
+zip creates tuples out of corresponding elements of 2 lists. fibonacci is every element in the
+sequence, while tail fibonacci is every element in the sequence except for the first element.
+This algorithm zips each corresponding element in the sequence and adds them together.
+Think of it this way:
+    Let's say fibonacci contains 1, 1, 2, 3, 5, 8, and tail fibonacci contains 1, 2, 3, 5, 8, 13
+    Adding those 2 lists together element-wise results in 2, 3, 5, 8, 13, 21, which calculates the
+    next value in the Fibonacci sequence
+-}
+fibonacci = 1 : 1 : [a + b | (a, b) <- zip fibonacci (tail fibonacci)]  -- [|] indicates a list comprehension
+
 
 -- Create a custom data type
 data Character = Character String Int 

@@ -90,7 +90,8 @@ sphinx-build -b html doc/source doc/build
 open doc/build/index.html
 ```
 
-`sphinx-build` will also build the project word cloud into the `doc/build/_images` folder.
+`sphinx-build` will also build the word cloud seen at the header of this page into the
+`doc/build/_images` folder.
 
 
 ## Third-party tools

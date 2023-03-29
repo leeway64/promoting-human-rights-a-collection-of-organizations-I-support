@@ -11,6 +11,13 @@ this project follows [semantic versioning](https://semver.org/).
 - None
 
 
+## [1.2.0] - 2023-3-28
+
+### Added
+
+- Use different Haskell language features to print text in Main.hs
+
+
 ## [1.1.0] - 2023-2-25
 
 ### Added
