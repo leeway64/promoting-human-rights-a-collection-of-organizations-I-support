@@ -6,7 +6,9 @@ applications.
 Docker containers are kind of like virtual machines, except they share the same operating system
 kernel (the OS kernel handles the underlying hardware). For example, let's say that your computer is
 running Ubuntu with Docker installed. Docker can run any version of Linux, since all Linux OSs
-(such as Ubuntu) share the same OS kernel.
+(such as Ubuntu) share the same OS kernel. Basically, you can determine what operating system
+(e.g., Ubuntu, Arch Linux, etc.) an image is based on using the
+[`FROM` keyword in the `Dockerfile`](https://docs.docker.com/engine/reference/builder/#from).
 
 There is less processing power overhead, less memory overhead, and shorter boot times with
 containers, compared to virtual machines.
