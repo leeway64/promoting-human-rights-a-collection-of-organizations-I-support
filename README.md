@@ -1,10 +1,8 @@
 # Promoting Human Rights: A Collection of Organizations I Support
 
-![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/leeway64/promoting-human-rights-a-collection-of-organizations-I-support)
 
-"[Everyone knows](https://www.routledge.com/Tiny-Revolutions-in-Russia-Twentieth-Century-Soviet-and-Russian-History/Adams/p/book/9780415444071)."
 
 ```geojson
 {
@@ -539,6 +537,21 @@
 }
 ```
 
+![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
+
+
+> "We Existed Before History and We Will Exist After History" [^ETGE]
+
+[^ETGE]: National anthem of the East Turkistan Government-in-Exile: https://east-turkistan.net/national-anthem/
+
+> [!IMPORTANT]
+> "The arc of the moral universe is long, but it bends toward justice." - Dr. Martin Luther King [^MLK]
+
+[^MLK]: https://obamawhitehouse.archives.gov/blog/2011/10/21/arc-moral-universe-long-it-bends-toward-justice
+
+> [!NOTE]
+> "[Everyone knows](https://www.routledge.com/Tiny-Revolutions-in-Russia-Twentieth-Century-Soviet-and-Russian-History/Adams/p/book/9780415444071)."
+
 
 This project displays a list of NGOs, human rights groups, and other organizations I support.
 
@@ -631,6 +644,16 @@ open doc/build/index.html
 `doc/build/_images` folder.
 
 
+## Data from Freedom House
+
+To learn more about how Freedom House scores have changed over time, you can run the following
+command to download data from 2003 and 2023.
+
+```bash
+sudo bash lib/get-freedom-house-data.sh https://freedomhouse.org/sites/default/files/2023-02/Aggregate_Category_and_Subcategory_Scores_FIW_2003-2023.xlsx
+```
+
+
 ## Actions you can take to support human rights in China
 
 ![](doc/)
@@ -666,14 +689,16 @@ to human rights abuses from around the world.
 
 ## Third-party tools
 
-- [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documentation generator.
-  - [sphinxcontrib-kroki](https://pypi.org/project/sphinxcontrib-kroki/) (MIT License): Allows for
+<!-- "+" also works for lists -->
+
++ [Sphinx](https://github.com/sphinx-doc/sphinx) (BSD license): Documentation generator.
+  + [sphinxcontrib-kroki](https://pypi.org/project/sphinxcontrib-kroki/) (MIT License): Allows for
     diagrams to be embedded into Sphinx documentation using Kroki. sphinxcontrib-kroki created the
     Vega word cloud at the start of this document.
-  - [furo](https://pypi.org/project/furo/) (MIT License): Sphinx documentation theme.
-- [Kroki](https://kroki.io/) (MIT License): Provides a simple way of drawing a variety of
+  + [furo](https://pypi.org/project/furo/) (MIT License): Sphinx documentation theme.
++ [Kroki](https://kroki.io/) (MIT License): Provides a simple way of drawing a variety of
   different types of diagrams (e.g.: PlantUML, BlockDiag).
-- [Docker](https://www.docker.com/) (Apache-2.0 License): Packages software into independent containers.
++ [Docker](https://www.docker.com/) (Apache-2.0 License): Packages software into independent containers.
 
 
 ## License
@@ -688,11 +713,3 @@ To use the CC-BY-4.0 license in your own project, refer to this page on
 
 The source code used to format and display the content (e.g., the Haskell, Python, and Docker code)
 is licensed under the [MIT License](LICENSE-CODE.txt).
-
-
-
-
-> "We Existed Before History and We Will Exist After History" [^ETGE]
-
-[^ETGE]: National anthem of the East Turkistan Government-in-Exile: https://east-turkistan.net/national-anthem/
-

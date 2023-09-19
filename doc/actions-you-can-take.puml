@@ -1,0 +1,8 @@
+@startuml
+skinparam actorStyle awesome
+
+actor Supporter
+Supporter --> (Attend or organize protests) #blue;line.dotted;text:blue;line.bold
+Supporter --> (Call your lawmakers) #blue;line.dotted;text:blue;line.bold
+Supporter --> (Donate to human rights groups) #blue;line.dotted;text:blue;line.bold
+@enduml

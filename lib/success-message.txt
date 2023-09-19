@@ -1,0 +1,4 @@
+# Refer to this page for more information on how to use the sponge command:
+# https://www.putorius.net/linux-sponge-soak-up-standard-input-and-write-to-a-file.html
+Freedom House data has been successfully downloaded
+Freedom House data has been successfully downloaded

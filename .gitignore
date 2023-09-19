@@ -14,3 +14,6 @@ build/
 
 # Jetbrains IDE files
 .idea/
+
+# Files created by Bash script
+messages.txt
