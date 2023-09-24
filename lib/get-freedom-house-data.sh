@@ -21,7 +21,7 @@ function main()
 
     # http --download is the same as using wget
     # Download the data file into the "lib" directory
-    http --download "$1" --output "include/data.xlsx"
+    http --download "$1" --output "doc/data.xlsx"
 
     # uniq removes adjacent identical lines and prints the remaining lines to standard output.
     # grep -v "^#" finds all lines that don't start with "#". sponge writes the output to another

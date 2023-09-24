@@ -537,17 +537,16 @@
 }
 ```
 
-![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
-
-
-> "We Existed Before History and We Will Exist After History" [^ETGE]
-
-[^ETGE]: National anthem of the East Turkistan Government-in-Exile: https://east-turkistan.net/national-anthem/
-
 > [!IMPORTANT]
 > "The arc of the moral universe is long, but it bends toward justice." - Dr. Martin Luther King [^MLK]
 
 [^MLK]: https://obamawhitehouse.archives.gov/blog/2011/10/21/arc-moral-universe-long-it-bends-toward-justice
+
+![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
+
+> "We Existed Before History and We Will Exist After History" [^ETGE]
+
+[^ETGE]: National anthem of the East Turkistan Government-in-Exile: https://east-turkistan.net/national-anthem/
 
 > [!NOTE]
 > "[Everyone knows](https://www.routledge.com/Tiny-Revolutions-in-Russia-Twentieth-Century-Soviet-and-Russian-History/Adams/p/book/9780415444071)."
@@ -646,17 +645,32 @@ open doc/build/index.html
 
 ## Data from Freedom House
 
-To learn more about how Freedom House scores have changed over time, you can run the following
-command to download data from 2003 and 2023.
+To learn more about how Freedom House Global Freedom Scores have changed over time, you can run
+the following command to download civil liberties scores, political rights scores, and total scores
+for every country (and many regions) from 2003 and 2023.
 
 ```bash
 sudo bash lib/get-freedom-house-data.sh https://freedomhouse.org/sites/default/files/2023-02/Aggregate_Category_and_Subcategory_Scores_FIW_2003-2023.xlsx
 ```
+This will download the `xlsx` file into the [`doc`](doc) directory.
 
 
 ## Actions you can take to support human rights in China
 
 ![](doc/)
+
+To generate a `LaTeX` document describing what actions you can take to support human rights in
+China, run the following command:
+
+```bash
+pdflatex --output-directory=doc doc/actions-you-can-take.tex
+```
+
+To generate the previous graphic from [actions-you-can-take.puml](doc/actions-you-can-take.puml),
+run this command:
+```bash
+python -m plantuml doc/actions-you-can-take.puml
+```
 
 - **Attend or organize protests**: As a member of a vibrant democracy, you can make your voice heard by
 attending or organizing protests against the CCP.
