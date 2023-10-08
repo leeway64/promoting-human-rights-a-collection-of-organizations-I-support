@@ -537,12 +537,13 @@
 }
 ```
 
+
+![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
+
 > [!IMPORTANT]
 > "The arc of the moral universe is long, but it bends toward justice." - Dr. Martin Luther King [^MLK]
 
 [^MLK]: https://obamawhitehouse.archives.gov/blog/2011/10/21/arc-moral-universe-long-it-bends-toward-justice
-
-![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
 
 > "We Existed Before History and We Will Exist After History" [^ETGE]
 
@@ -657,20 +658,7 @@ This will download the `xlsx` file into the [`doc`](doc) directory.
 
 ## Actions you can take to support human rights in China
 
-![](doc/)
-
-To generate a `LaTeX` document describing what actions you can take to support human rights in
-China, run the following command:
-
-```bash
-pdflatex --output-directory=doc doc/actions-you-can-take.tex
-```
-
-To generate the previous graphic from [actions-you-can-take.puml](doc/actions-you-can-take.puml),
-run this command:
-```bash
-python -m plantuml doc/actions-you-can-take.puml
-```
+![Actions you can take](doc/images actions-you-can-take.png)
 
 - **Attend or organize protests**: As a member of a vibrant democracy, you can make your voice heard by
 attending or organizing protests against the CCP.
@@ -686,6 +674,12 @@ China, as listed below. Donating to them truly makes a difference, no matter how
 
 Ultimately, the Chinese Communist Party can cut all the flowers, but they can't
 [stop the spring](https://www.gettyimages.com/detail/news-photo/children-play-with-toy-guns-next-to-a-banner-put-up-by-news-photo/1232245573).
+
+To generate the previous graphic from [actions-you-can-take.puml](doc/actions-you-can-take.puml),
+run this command:
+```bash
+cd doc && python -m plantuml --out images actions-you-can-take.puml
+```
 
 
 ### Notable human rights organizations

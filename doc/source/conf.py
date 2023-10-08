@@ -17,11 +17,11 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'LWHumanRightsOrganizations'
-author = 'lee-way'
+project = 'Promoting Human Rights: A Collection of Organizations I Support'
+author = 'leeway64'
 
 # The full version, including alpha/beta/rc tags
-release = '1.2.0'
+release = '2.0.0'
 
 
 # -- General configuration ---------------------------------------------------

@@ -15,5 +15,7 @@ build/
 # Jetbrains IDE files
 .idea/
 
-# Files created by Bash script
+# Files created or downloaded by get-freedom-house-data script
 messages.txt
+data.xlsx
+success-message-edited.txt

@@ -1,9 +1,9 @@
-.. LWHumanRightsOrganizations documentation master file.
+.. Promoting Human Rights: A Collection of Organizations I Support documentation master file.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-LWHumanRightsOrganizations
-==========================
+Promoting Human Rights: A Collection of Organizations I Support
+=================================================================
 
 .. kroki:: vega
 
@@ -18,14 +18,13 @@ LWHumanRightsOrganizations
         {
           "name": "table",
           "values": [
-            "Stop Putin",
             "National Bank of Ukraine",
             "Free Tibet",
             "Uyghur Human Rights Project",
             "Wikimedia Foundation",
             "East Turkistan Government-in-Exile",
             "Human Rights Watch",
-            "Notepad++"
+            "Freedom House"
           ],
           "transform": [
             {
