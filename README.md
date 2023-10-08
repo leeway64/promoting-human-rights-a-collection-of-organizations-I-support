@@ -538,7 +538,7 @@
 ```
 
 
-![Human rights word cloud](doc/images/human_rights_word_cloud.svg)
+![Human rights word cloud](doc/images/human-rights-word-cloud.svg)
 
 > [!IMPORTANT]
 > "The arc of the moral universe is long, but it bends toward justice." - Dr. Martin Luther King [^MLK]
@@ -648,7 +648,7 @@ open doc/build/index.html
 
 To learn more about how Freedom House Global Freedom Scores have changed over time, you can run
 the following command to download civil liberties scores, political rights scores, and total scores
-for every country (and many regions) from 2003 and 2023.
+from 2003 and 2023.
 
 ```bash
 sudo bash lib/get-freedom-house-data.sh https://freedomhouse.org/sites/default/files/2023-02/Aggregate_Category_and_Subcategory_Scores_FIW_2003-2023.xlsx
@@ -658,7 +658,7 @@ This will download the `xlsx` file into the [`doc`](doc) directory.
 
 ## Actions you can take to support human rights in China
 
-![Actions you can take](doc/images actions-you-can-take.png)
+![Actions you can take](doc/images-actions-you-can-take.png)
 
 - **Attend or organize protests**: As a member of a vibrant democracy, you can make your voice heard by
 attending or organizing protests against the CCP.
