@@ -11,6 +11,20 @@ this project follows [semantic versioning](https://semver.org/).
 - None
 
 
+## [2.0.0] - 2023-10-8
+
+### Added
+
+- A map using GeoJSON
+- Section about actions you can take
+- Quotes in alerts
+- Bash script, PUML file, XML file
+
+### Changed
+
+- Updated word cloud
+
+
 ## [1.2.0] - 2023-3-28
 
 ### Added

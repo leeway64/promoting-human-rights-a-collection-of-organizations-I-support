@@ -658,7 +658,7 @@ This will download the `xlsx` file into the [`doc`](doc) directory.
 
 ## Actions you can take to support human rights in China
 
-![Actions you can take](doc/images-actions-you-can-take.png)
+![Actions you can take](doc/images/actions-you-can-take.png)
 
 - **Attend or organize protests**: As a member of a vibrant democracy, you can make your voice heard by
 attending or organizing protests against the CCP.
