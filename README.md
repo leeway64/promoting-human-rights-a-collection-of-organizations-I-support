@@ -552,6 +552,8 @@
 > [!NOTE]
 > "[Everyone knows](https://www.routledge.com/Tiny-Revolutions-in-Russia-Twentieth-Century-Soviet-and-Russian-History/Adams/p/book/9780415444071)."
 
+![blank-paper](doc/images/blank-paper.jpg)
+
 
 This project displays a list of NGOs, human rights groups, and other organizations I support.
 
@@ -655,6 +657,18 @@ sudo bash lib/get-freedom-house-data.sh https://freedomhouse.org/sites/default/f
 ```
 This will download the `xlsx` file into the [`doc`](doc) directory.
 
+Refer to Freedom House's page on [Countries and Territories](https://freedomhouse.org/countries/freedom-world/scores)
+to see the most recent data in a more readable form.
+
+
+## Analysis of Global Freedom Scores for several notable countries
+To view the analysis in PDF form, run the following commands:
+```bash
+npm install -g markdown-pdf --ignore-scripts
+julia plot-scores.jl
+markdown-pdf analysis-of-global-freedom-scores-for-several-notable-countries.md
+```
+
 
 ## Actions you can take to support human rights in China
 
@@ -682,6 +696,7 @@ cd doc && python -m plantuml --out images actions-you-can-take.puml
 ```
 
 
+
 ### Notable human rights organizations
 
 - [Uyghur Human Rights Project (UHRP)](https://uhrp.org/): UHRP promotes "the rights of the Uyghurs
@@ -706,6 +721,8 @@ to human rights abuses from around the world.
   + [furo](https://pypi.org/project/furo/) (MIT License): Sphinx documentation theme.
 + [Kroki](https://kroki.io/) (MIT License): Provides a simple way of drawing a variety of
   different types of diagrams (e.g.: PlantUML, BlockDiag).
++ [Python-PlantUML](https://pypi.org/project/plantuml/) (BSD License): Python package for generating
+  PlantUML diagrams.
 + [Docker](https://www.docker.com/) (Apache-2.0 License): Packages software into independent containers.
 
 
