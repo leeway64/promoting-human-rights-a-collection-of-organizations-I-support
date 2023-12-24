@@ -561,7 +561,8 @@ As a big believer in the importance of human rights, I want to share the
 organizations that I have donated to.
 
 Additionally, I also wish to present several resources you can take advantage of and actions you
-can take that will help support human rights and fight back against CCP rule.
+can take that will help support human rights and fight back against Chinese Communist Party (CCP)
+rule.
 
 
 ## Usage
@@ -657,16 +658,16 @@ sudo bash lib/get-freedom-house-data.sh https://freedomhouse.org/sites/default/f
 ```
 This will download the `xlsx` file into the [`doc`](doc) directory.
 
-Refer to Freedom House's page on [Countries and Territories](https://freedomhouse.org/countries/freedom-world/scores)
-to see the most recent data in a more readable form.
+Refer to Freedom House's [Countries and Territories](https://freedomhouse.org/countries/freedom-world/scores)
+page to see the most recent data in a more readable form.
 
 
-## Analysis of Global Freedom Scores for several notable countries
+## Analysis of Global Freedom Scores for several noteworthy countries
 To view the analysis in PDF form, run the following commands:
 ```bash
 npm install -g markdown-pdf --ignore-scripts
 julia plot-scores.jl
-markdown-pdf analysis-of-global-freedom-scores-for-several-notable-countries.md
+markdown-pdf analysis-of-global-freedom-scores.md
 ```
 
 
@@ -680,11 +681,13 @@ attending or organizing protests against the CCP.
 your representatives in the US Congress. These senators and congresspeople take opinions from
 constituents very seriously; letting them know that you support human rights and wish to push back
 against China can help them know what their constituents are thinking and feeling.
-  - For example, you can call or email your lawmakers to express your support for acts such as the
-  [Uyghur Forced Labor Prevention Act](https://freedomhouse.org/article/united-states-freedom-house-applauds-passage-uyghur-forced-labor-prevention-act-urges-swift)
-  or the [Uyghur Human Rights Policy Act](https://freedomhouse.org/article/united-states-freedom-house-applauds-passage-uyghur-human-rights-policy-act).
+  - For example, you can call, email, or write to your lawmakers to express support for acts such as the
+  [Uyghur Forced Labor Prevention Act](https://freedomhouse.org/article/united-states-freedom-house-applauds-passage-uyghur-forced-labor-prevention-act-urges-swift),
+  [Uyghur Human Rights Policy Act](https://freedomhouse.org/article/united-states-freedom-house-applauds-passage-uyghur-human-rights-policy-act),
+  or the [Tibetan Policy and Support Act](https://www.rfa.org/english/news/tibet/act-12222020155509.html).
 - **Donate to human rights groups**: There are several human rights groups that support human rights in 
-China, as listed below. Donating to them truly makes a difference, no matter how small.
+China, as listed below in the "Notable human rights organizations" section. Donating to them truly
+makes a difference, no matter how small.
 
 Ultimately, the Chinese Communist Party can cut all the flowers, but they can't
 [stop the spring](https://www.gettyimages.com/detail/news-photo/children-play-with-toy-guns-next-to-a-banner-put-up-by-news-photo/1232245573).
@@ -694,7 +697,6 @@ run this command:
 ```bash
 cd doc && python -m plantuml --out images actions-you-can-take.puml
 ```
-
 
 
 ### Notable human rights organizations
@@ -708,6 +710,8 @@ government of East Turkistan.
 - [Human Rights Watch](https://www.hrw.org/): An organization that investigates and brings attention
 to human rights abuses from around the world.
 - [Freedom House](https://freedomhouse.org/): Freedom House protests against threats to democracy and "empower citizens to exercise their fundamental rights" through analysis, advocacy, and support to other defenders of freedom.
+- [Students for a Free Tibet](https://studentsforafreetibet.org/): A chapter-based organization that
+campaigns for the political freedom of the Tibetan people.
 
 
 ## Third-party tools
