@@ -1,42 +1,43 @@
-<Global-Freedom-Scores>
-    <Syria>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </Syria>
-    <Tibet>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </Tibet>
-    <North-Korea>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </North-Korea>
-    <Saudi-Arabia>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </Saudi-Arabia>
-    <China>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </China>
-    <Afghanistan>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </Afghanistan>
-    <Iran>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </Iran>
-    <Russia>
-        <Total-score></Total-score>
-        <Political-rights></Political-rights>
-        <Civil-liberties></Civil-liberties>
-    </Russia>
-</Global-Freedom-Scores>
+<!-- All data from https://freedomhouse.org/sites/default/files/2023-02/Aggregate_Category_and_Subcategory_Scores_FIW_2003-2023.xlsx -->
+<Global-Freedom-Scores-2023>
+    <country name="Syria">
+        <Total-score>1</Total-score>
+        <Political-rights>-3</Political-rights>
+        <Civil-liberties>4</Civil-liberties>
+    </country>
+    <country name="Tibet">
+        <Total-score>1</Total-score>
+        <Political-rights>-2</Political-rights>
+        <Civil-liberties>3</Civil-liberties>
+    </country>
+    <country name="North-Korea">
+        <Total-score>3</Total-score>
+        <Political-rights>0</Political-rights>
+        <Civil-liberties>3</Civil-liberties>
+    </country>
+    <country name="Saudi-Arabia">
+        <Total-score>8</Total-score>
+        <Political-rights>1</Political-rights>
+        <Civil-liberties>7</Civil-liberties>
+    </country>
+    <country name="China">
+        <Total-score>9</Total-score>
+        <Political-rights>-2</Political-rights>
+        <Civil-liberties>11</Civil-liberties>
+    </country>
+    <country name="Afghanistan">
+        <Total-score>8</Total-score>
+        <Political-rights>1</Political-rights>
+        <Civil-liberties>7</Civil-liberties>
+    </country>
+    <country name="Iran">
+        <Total-score>12</Total-score>
+        <Political-rights>4</Political-rights>
+        <Civil-liberties>8</Civil-liberties>
+    </country>
+    <country name="Russia">
+        <Total-score>16</Total-score>
+        <Political-rights>5</Political-rights>
+        <Civil-liberties>11</Civil-liberties>
+    </country>
+</Global-Freedom-Scores-2023>

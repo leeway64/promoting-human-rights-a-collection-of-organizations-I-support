@@ -658,6 +658,9 @@ sudo bash lib/get-freedom-house-data.sh https://freedomhouse.org/sites/default/f
 ```
 This will download the `xlsx` file into the [`doc`](doc) directory.
 
+Refer to Freedom House's [Freedom in the World report](https://freedomhouse.org/report/freedom-world)
+for more information on this dataset.
+
 Refer to Freedom House's [Countries and Territories](https://freedomhouse.org/countries/freedom-world/scores)
 page to see the most recent data in a more readable form.
 
@@ -666,7 +669,9 @@ page to see the most recent data in a more readable form.
 To view the analysis in PDF form, run the following commands:
 ```bash
 npm install -g markdown-pdf --ignore-scripts
-julia plot-scores.jl
+julia -e "using Pkg; Pkg.activate(pwd()); Pkg.instantiate()"
+julia --project=. -e 'using Pkg; Pkg.add(["Plots", "EzXML"])'
+julia --project=. lib/plot-scores.jl
 markdown-pdf analysis-of-global-freedom-scores.md
 ```
 
