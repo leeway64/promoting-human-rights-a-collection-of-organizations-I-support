@@ -1,4 +1,4 @@
-# Analysis of Global Freedom Scores for several noteworthy countries
+# Analysis of Global Freedom Scores for Selected Countries
 
 ![]()
 

@@ -670,7 +670,7 @@ To view the analysis in PDF form, run the following commands:
 ```bash
 npm install -g markdown-pdf --ignore-scripts
 julia -e "using Pkg; Pkg.activate(pwd()); Pkg.instantiate()"
-julia --project=. -e 'using Pkg; Pkg.add(["Plots", "EzXML"])'
+julia --project=. -e 'using Pkg; Pkg.add(["Plots", "StatsPlots", "EzXML"])'
 julia --project=. lib/plot-scores.jl
 markdown-pdf analysis-of-global-freedom-scores.md
 ```
