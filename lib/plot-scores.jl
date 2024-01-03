@@ -5,8 +5,12 @@ using Measures
 using DataStructures
 
 
-if abspath(PROGRAM_FILE) == @__FILE__
-    # Import data from the XML file
+function print_messages()
+    println("Pax Vobiscum")
+end
+
+# Import data from the XML file
+function import_data()
     global_freedom_scores_xml = readxml("doc/Freedom-House-Global-Freedom-Scores.2023.xml")
     global_freedom_scores = root(global_freedom_scores_xml)
 
@@ -19,6 +23,14 @@ if abspath(PROGRAM_FILE) == @__FILE__
         end
         all_countries_scores_dict[country["name"]] = country_scores_dict
     end
+    
+    return all_countries_scores_dict
+end
+
+if abspath(PROGRAM_FILE) == @__FILE__
+    print_messages()
+    
+    all_countries_scores_dict = import_data()
     
     
     # Get the list of countries to plot
@@ -54,8 +66,9 @@ if abspath(PROGRAM_FILE) == @__FILE__
     x_axis_countries = repeat(countries, outer = 3)  # outer number is how many categories there are
 
     groupedbar(x_axis_countries, all_scores, group = categories, xlabel = "Selected countries", ylabel = "Scores",
-        title = "Global Freedom Scores for selected countries (2023)\nAll data from https://freedomhouse.org/sites/default/files/2023-02/Aggregate_Category_and_Subcategory_Scores_FIW_2003-2023.xlsx", bar_width = 0.67, margin = 8mm,
-        lw = 0, framestyle = :box, minorgrid = true, minorticks = true, size = (1920, 1080))
+        title = "Global Freedom Scores for selected countries (2023)\nAll data from https://freedomhouse.org/sites/default/files/2023-02/Aggregate_Category_and_Subcategory_Scores_FIW_2003-2023.xlsx", 
+        bar_width = 0.67, margin = 8mm, lw = 0, framestyle = :box, minorgrid = true,
+        minorticks = true, size = (1920, 1080))
     
     
     savefig("doc/images/global-freedom-scores.png")
