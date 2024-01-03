@@ -1,4 +1,12 @@
 <!-- All data from https://freedomhouse.org/sites/default/files/2023-02/Aggregate_Category_and_Subcategory_Scores_FIW_2003-2023.xlsx -->
+<!-- Basic XML information -->
+<!-- XML is a serialization format -->
+<!-- Things like "Global-Freedom-Scores-2023" and "country", for example, are known as tags -->
+<!-- Everything in an XML document are known as nodes -->
+<!-- The root node of this XML document is "Global-Freedom-Scores-2023" -->
+<!-- For example, the "Total-score" element is the first child of the "Afghanistan" element -->
+<!-- Text in each elements are contained in text nodes. For example, the scores for each country are located inside text nodes. -->
+<!-- Each attribute (things like the "name" attribute for each country) are contained in attribute nodes -->
 <Global-Freedom-Scores-2023>
     <country name="Syria">
         <Total-score>1</Total-score>

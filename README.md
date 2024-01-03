@@ -670,7 +670,7 @@ To view the analysis in PDF form, run the following commands:
 ```bash
 npm install -g markdown-pdf --ignore-scripts
 julia -e "using Pkg; Pkg.activate(pwd()); Pkg.instantiate()"
-julia --project=. -e 'using Pkg; Pkg.add(["Plots", "StatsPlots", "EzXML"])'
+julia --project=. -e 'using Pkg; Pkg.add(["Plots", "StatsPlots", "EzXML", "Measures"])'
 julia --project=. lib/plot-scores.jl
 markdown-pdf analysis-of-global-freedom-scores.md
 ```
@@ -730,6 +730,9 @@ campaigns for the political freedom of the Tibetan people.
   + [furo](https://pypi.org/project/furo/) (MIT License): Sphinx documentation theme.
 + [Kroki](https://kroki.io/) (MIT License): Provides a simple way of drawing a variety of
   different types of diagrams (e.g.: PlantUML, BlockDiag).
++ [StatsPlots](https://github.com/JuliaPlots/Plots.jl) (MIT Expat License): Drop-in replacement for Plots.jl. Provides additional plotting functions.
++ [EzXML](https://github.com/JuliaIO/EzXML.jl) (MIT License): Julia library for reading and writing XML files
++ [Measures](https://github.com/JuliaGraphics/Measures.jl) (MIT Expat License): Julia library for measurement types
 + [Python-PlantUML](https://pypi.org/project/plantuml/) (BSD License): Python package for generating
   PlantUML diagrams.
 + [Docker](https://www.docker.com/) (Apache-2.0 License): Packages software into independent containers.
