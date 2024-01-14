@@ -19,3 +19,5 @@ build/
 messages.txt
 data.xlsx
 success-message-edited.txt
+
+*.pdf

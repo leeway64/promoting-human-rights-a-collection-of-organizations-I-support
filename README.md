@@ -666,13 +666,15 @@ page to see the most recent data in a more readable form.
 
 
 ## Analysis of Global Freedom Scores for several noteworthy countries
+Prerequisites: Ruby, libnotify-bin
+
 To view the analysis in PDF form, run the following commands:
 ```bash
-npm install -g markdown-pdf --ignore-scripts
+gem install asciidoctor-pdf
 julia -e "using Pkg; Pkg.activate(pwd()); Pkg.instantiate()"
 julia --project=. -e 'using Pkg; Pkg.add(["Plots", "StatsPlots", "EzXML", "Measures"])'
 julia --project=. lib/plot-scores.jl
-markdown-pdf analysis-of-global-freedom-scores.md
+bash lib/convert-asciidoc-to-pdf.sh
 ```
 
 
